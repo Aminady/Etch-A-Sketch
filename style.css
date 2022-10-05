@@ -5,52 +5,22 @@
     font-family: 'Dancing Script', serif;
 }
 
-
-.oui {
-    background: olivedrab;
-}
-
-.title-box {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    background: black;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h1 {
-    color: white;
-}
-
-/* input[type = "color"] {
-    visibility: hidden;
-} */
-
-.github {
-    fill: white;
-    width: 30px;
-    height: 30px;
+body {
+    background: url(./dddraw1.svg) center / cover;
 }
 
 .crayon {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
     width: 150px;
-    margin: 0%;
-    /* height: 150px;
-    background: rgb(255, 128, 255);
-    margin-right: 500px; */ 
 }
 
 .bigcont {
-    width: 512px;
-    height: 400px;
-    background: black;
+    width: 40%;
+    height: 60vh;
+    background: rgb(236, 132, 250);
     margin: auto;
     display: flex;
     box-shadow: 1px 5px 8px rgba(97, 96, 96, 0.589);
@@ -72,7 +42,9 @@ h1 {
 }
 
 .button {
+    border: none;
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,10 +52,88 @@ h1 {
     border: transparent;
 }
 
-#btn, #clear, #color, #erase{
-    width: 100px;
-    height: 40px;
-    background: black;
+.btn, #clear, #color, #erase{
+    font-size: 1.1em;
+    background: rgb(236, 132, 250);
     color: white;
     cursor: pointer;
+    border: none;
+}
+
+.btn {
+    background: rgb(70, 188, 224);
+}
+
+#color {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#clear, #color, #erase {
+    width: 70%;
+    height: 5vh;
+}
+
+.btn {
+    width: 10%;
+    height: 5vh;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    width: 25%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icon {
+    width: 30%;
+    fill: rebeccapurple;
+}
+
+@media screen and (max-width: 700px) {
+    .btn {
+        width: 20%;
+    }
+    .bigcont {
+        width: 95%;
+        height: 65vh;
+    }   
+    .social {
+        width: 50%;
+        margin-top: 50px;
+    } 
+    .footer-icon {
+        width: 40%;
+    }
+        
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+    border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 50%;
+
 }
