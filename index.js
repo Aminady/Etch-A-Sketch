@@ -40,10 +40,19 @@ function createBlock(divNum, divSize) {
             clear.addEventListener('click', () => {
             divItem.remove();
         })
+
+        erase.addEventListener('click', () => {
+            divItem.addEventListener('mouseover', () => {
+                divItem.style.background = eraseAPixel(divItem);
+            })
+        })
         
     };
 };
 
+function eraseAPixel(e) {
+    e.style.backgroundColor = '#ffffff';
+}
 
 function changeColor(e) {
     let color = colorPicker.value;
