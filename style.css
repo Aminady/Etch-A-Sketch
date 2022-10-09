@@ -5,8 +5,8 @@
     font-family: 'Dancing Script', serif;
 }
 
-body {
-    background: url(./dddraw3.svg) center / cover;
+body { 
+    background: url(./dddraw4.svg) center / cover ;
 }
 
 .crayon {
@@ -37,14 +37,10 @@ body {
     overflow: hidden;
 }
 
-.oui:hover {
-    background: black;
-}
-
 .button {
     border: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,7 +90,7 @@ a {
 
 .social {
     width: 25%;
-    margin-top: 100px;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
 }
@@ -105,6 +101,9 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+    .button {
+        margin-bottom: 20%;
+    }
     .btn {
         width: 20%;
     }
@@ -114,7 +113,7 @@ a {
     }   
     .social {
         width: 50%;
-        margin-top: 50px;
+        margin-top: 20%;
     } 
     .footer-icon {
         width: 40%;
